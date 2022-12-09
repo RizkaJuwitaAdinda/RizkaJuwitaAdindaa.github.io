@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .container {
+            margin: 300px;
+            width: 50%;
+            height: 290px;
+            padding: 20px;
+            background-color:rgb(186, 148, 209);
+        }
+        body {
+            box-sizing: content-box;
+            background-image: url('img/bgfrk.jpg');
+            background-size: cover;
+        }
+        h1 {
+            text-align: center;
+            font-size: 50px;
+        }
+        .inputan {
+            width: fit-content;
+            height: fit-content;
+            margin: auto;
+        }
+        .text input {
+            display: block;
+            width: 300px;
+            height: 30px;
+            margin-bottom: 15px;
+        }
+        .jk input {
+            display: inline;
+            margin-bottom: 15px;
+        }
+        .jk {
+            color: black;
+        }
+        .religion {
+            color: black;
+        }
+
+        .religion {
+            margin-bottom: 15px;
+        }
+
+        .religion label {
+            margin-right: 15px;
+        }
+
+        .close {
+            display: inline;
+        }
+
+        .close a {
+            margin-left: 165px;
+            color: black;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Member Register</h1>
+    <div class="container">
+        <div class="inputan">
+            <form action="reg.php" method="get">
+                <div class="text">
+                    <input type="text" name="id" placeholder="Masukan ID">
+                    <input type="text" name="nama" placeholder="Masukan Nama">
+                    <input type="text" name="alamat" placeholder="Masukan Alamat">
+                    <input type="number" name="notelp" placeholder="Masukan No Telp">
+                </div>
+                <div class="jk">
+                    <input type="radio" name="jk" value="Pria">Pria
+                    <input type="radio" name="jk" value="Wanita">Wanita
+                </div>
+                <div class="religion">
+
+                    <label for="agama">Pilih Agama</label>
+
+                    <select name="agama">
+                        <option value="islam">Islam</option>
+                        <option value="kristen">Kristen</option>
+                        <option value="katolik">Katolik</option>
+                        <option value="hindu">Hindu</option>
+                        <option value="buddha">Buddha</option>
+                        <option value="konghucu">Konghucu</option>
+                        <option value="atheis">Atheis</option>
+                    </select>
+                </div>
+                <div class="close">
+                    <input type="submit" name="kirim" value="daftar">
+                    <a href="index.php">Menu Utama</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
